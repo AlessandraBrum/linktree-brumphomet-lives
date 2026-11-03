@@ -6,6 +6,7 @@
   --color-magenta: #D4145A;
   --color-accent: #FF2B78;
   --color-pink-light: #FF7AA8;
+  --color-link: #FF94BB;
   --color-text: #F5F4F5;
   --color-text-secondary: #B8B3B8;
   --font-family: "Manrope", system-ui, sans-serif;
@@ -243,6 +244,23 @@ img {
   margin: 0;
   color: var(--color-text-secondary);
   font-size: 1rem;
+}
+
+.footer a {
+  color: var(--color-link);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border-radius: 4px;
+}
+
+.footer a:hover {
+  color: var(--color-text);
+}
+
+.footer a:focus-visible {
+  outline: 3px solid var(--color-pink-light);
+  outline-offset: 3px;
 }
 
 @keyframes glow {
